@@ -129,3 +129,40 @@ body {
 .disable {
     display: none;
 }
+
+.background {
+    width: 100vh;
+    height: 100vh;
+    background-color: hsl(240, 100%, 5%);
+    position: absolute;
+    top: 0px;
+    opacity: 35%;
+}
+
+.menu {
+    width: 70%;
+    position: absolute;
+    /* z-index: 1; */
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    background-color: hsl(36, 100%, 99%);
+    color: hsl(240, 100%, 5%);
+}
+
+.menu button {
+    position: relative;
+    padding-left: 210px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.menu h3 {
+    font-weight: 400;
+    padding: 20px 0px 10px 25px;
+}
+
+button {
+    border-style: unset;
+    background-color: transparent;
+}
