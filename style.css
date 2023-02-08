@@ -34,8 +34,7 @@ body {
 
 .initial-content .image {
     width: 345px;
-   height: 340px;
-    background-image: url(assets/images/image-web-3-mobile.jpg);
+    height: 340px;
     background-position: center;
     background-size: cover;
 }
@@ -45,7 +44,11 @@ body {
     color: hsl(240, 100%, 5%);
     font-weight: 800;
     padding-bottom: 10px;
-    white-space: pre-line;
+}
+
+.initial-content h1::before {
+    white-space: pre;
+    content: "The Bright\a Future of Web \a 3.0?";
 }
 
 .initial-content p {
@@ -165,4 +168,91 @@ body {
 button {
     border-style: unset;
     background-color: transparent;
+}
+
+@media(min-width: 1440px) {
+
+    body {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+       
+        grid-template-areas: 
+        'header header header'
+        'initial-content initial-content new'
+        'initial-content initial-content new'
+        'content-1 content-2 content-3';
+        padding: 100px;
+        gap: 20px;
+    
+    }
+
+    #header {
+        grid-area: header;
+    }
+    #initial-content {
+        grid-area: initial-content;
+    }
+    #new {
+        grid-area: new;
+        height: 100%;
+    }
+
+    .new {
+        margin-bottom: 0;
+    }
+    #content-1 {
+        grid-area: content-1; 
+    }
+    #content-2 {
+        grid-area: content-2; 
+    }
+    #content-3 {
+        grid-area: content-3; 
+    }
+
+    .initial-content{  
+        display: grid;
+        grid-template-areas: 'image image'
+                             'title texto'
+                             'button button';
+        grid-template-columns: repeat(2, 1fr);     
+        gap: 20px;                        
+    }
+
+    /* .initial-content .image {
+        background-image: url(assets/images/image-web-3-desktop.jpg);
+        width: 848px;
+        height: 340px;
+        grid-area: image;
+    } */
+    .initial-content .image {
+        grid-area: image;
+        max-width: 100%;
+    }
+
+    .initial-content h1 {
+        height: 100%;
+    }
+
+    .initial-content h1::before {
+       grid-area: title;
+       content: "The Bright\a Future of \a Web 3.0?";
+       white-space: pre;
+       font-size: 52px;
+    }
+
+    .initial-content p {
+        grid-area: texto;
+        font-size: 18px;
+    }
+
+    .initial-content button {
+        grid-area: button;
+        grid-column: 2/3;
+        font-size: 14px;
+        height: 50px;
+        margin-bottom: 0px;
+        white-space: unset;
+    }
 }
