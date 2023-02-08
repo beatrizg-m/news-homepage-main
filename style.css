@@ -187,7 +187,7 @@ button {
         'initial-content initial-content new'
         'initial-content initial-content new'
         'content-1 content-2 content-3';
-        padding: 100px;
+        padding: 80px;
         gap: 20px;
     
     }
@@ -227,13 +227,15 @@ button {
     .initial-content button {
         width: 200px;
         height: 50px;
-        background-color: hsl(5, 85%, 63%);
-        border-style: none;
-        color: hsl(36, 100%, 99%);
         font-size: 14px;
-        font-weight: 700;
         letter-spacing: 2.5px;
         margin-bottom: 0px;
+    }
+
+    .initial-content button:hover{
+        cursor: pointer;
+        background-color: hsl(240, 100%, 5%);
+        transition: 0.4s;
     }
 
     .header .logo {
@@ -263,6 +265,12 @@ button {
         height: auto;
         color: hsl(236, 13%, 42%);
         font-size: 18px;
+    }
+
+    .menu h3:hover {
+        cursor: pointer;
+        color: hsl(35, 77%, 62%);
+        transition: 0.4s;
     }
 
     .initial-content .image-mobile {
@@ -328,6 +336,12 @@ button {
         margin-top: 30px;
     }
 
+    .new h3:hover {
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
     .new p {
         font-size: 18px;
         margin-bottom: 20px;
@@ -347,6 +361,12 @@ button {
 
     .content h3 {
         font-size: 20px;
+    }
+
+    .content h3:hover {
+        color: hsl(5, 85%, 63%);
+        cursor: pointer;
+        transition: 0.4s;
     }
 
     .content p {
