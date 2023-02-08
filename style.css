@@ -32,7 +32,11 @@ body {
     width: auto;
 }
 
-.initial-content .image {
+.initial-content .image-desktop {
+    display: none;
+}
+
+.initial-content .image-mobile {
     width: 345px;
     height: 340px;
     background-position: center;
@@ -226,9 +230,15 @@ button {
         height: 340px;
         grid-area: image;
     } */
-    .initial-content .image {
+
+    .initial-content .image-mobile {
+        display: none;
+    }
+
+    .initial-content .image-desktop {
         grid-area: image;
         max-width: 100%;
+        display: block;
     }
 
     .initial-content h1 {
