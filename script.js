@@ -1,9 +1,7 @@
 const buttonMenu = document.querySelector('.button-menu');
 const menu = document.querySelector('.menu');
 const closeMenu = document.querySelector('.close-menu')
-console.log(menu);
 const bgMenuActive = document.querySelector('.background');
-
 
 buttonMenu.addEventListener('click', (e) => {
     e.preventDefault();
