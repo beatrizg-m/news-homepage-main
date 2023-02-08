@@ -80,7 +80,7 @@ body {
     width: 100%;
     background-color: hsl(240, 100%, 5%);
     height: fit-content;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 50px;
 }
 
@@ -175,7 +175,7 @@ button {
     background-color: transparent;
 }
 
-@media(min-width: 1440px) {
+@media(min-width: 1366px) {
 
     body {
         display: grid;
@@ -219,10 +219,25 @@ button {
     .initial-content{  
         display: grid;
         grid-template-areas: 'image image'
-                             'title texto'
-                             'button button';
+                             'title texto';
         grid-template-columns: repeat(2, 1fr);     
         gap: 20px;                        
+    }
+
+    .initial-content button {
+        width: 200px;
+        height: 50px;
+        background-color: hsl(5, 85%, 63%);
+        border-style: none;
+        color: hsl(36, 100%, 99%);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        margin-bottom: 0px;
+    }
+
+    .header .logo {
+        width: 90px;
     }
 
     .header button {
@@ -246,13 +261,9 @@ button {
         align-items: center;
         width: 100%;
         height: auto;
+        color: hsl(236, 13%, 42%);
+        font-size: 18px;
     }
-    /* .initial-content .image {
-        background-image: url(assets/images/image-web-3-desktop.jpg);
-        width: 848px;
-        height: 340px;
-        grid-area: image;
-    } */
 
     .initial-content .image-mobile {
         display: none;
@@ -261,10 +272,23 @@ button {
     .initial-content .image-desktop {
         grid-area: image;
         max-width: 100%;
+        /* height: ; */
         display: block;
+        margin-bottom: 15px;
     }
 
     .initial-content h1 {
+        height: 100%;
+    }
+
+    .initial-content {
+        gap: 0px;
+        height: 100%;
+    }
+    .content-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         height: 100%;
     }
 
@@ -278,6 +302,9 @@ button {
     .initial-content p {
         grid-area: texto;
         font-size: 18px;
+        line-height: 35px;
+        padding-bottom: 0px;
+
     }
 
     .initial-content button {
@@ -287,5 +314,44 @@ button {
         height: 50px;
         margin-bottom: 0px;
         white-space: unset;
+    }
+
+    .new h2 {
+        font-size: 42px;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+
+    .new h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    .new p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding-top: 50px;
+    }
+
+    .content .image-content {
+        width: 110px;
+    }
+
+    .content span {
+        font-size: 36px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .content p {
+        width: 250px;
+        font-size: 18px;
+        line-height: 30px;
     }
 }
